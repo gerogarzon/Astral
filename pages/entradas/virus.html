@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRAL</title>
+
+    <!-- LINK DE FUENTE AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ESTILOS BOOTSTRAP -->
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+
+    <!-- ESTILO PROPIOS -->
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <!-- LOGO -->
+    <link rel="shortcut icon" href="/assets/logoHead.png">
+
+</head>
+
+<body class="background-astro">
+
+    <!-- ====================
+    ==       HEADER        ==
+    ========================= -->
+  <div id="header">
+    <header>
+      <!-- navbar open -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
+        <div class="navbar-container container-fluid m-0 p-0">
+          <!-- LOGO -->
+          <a class="logo" href="/index.html">
+            <img src="/assets/astral 3.png" alt="logo Astral" width="35" height="35"> ASTRAL
+          </a>
+          <!-- MENU DEBLEGABLE -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:25px;"></i>
+            </span>
+          </button>
+          <!-- MENU -->
+          <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="/pages/conocenos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="/pages/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#VentanaModalSusctiption">Suscripcion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" aria-current="page" href="/pages/login.html"> Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Ventana Modal de la Suscripción -->
+      <div class="modal fade" id="VentanaModalSusctiption" tabindex="-1"       aria-labelledby="suscripcionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <!-- Modal header -->
+              <div class="modal-header">
+                <h5 class="modal-title-S" id="suscripcionModalLabel">SUSCRIPCIÓN</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form>
+                    <!-- MAIL -->
+                    <div class="mb-3">
+                      <label for="ContactoEmail" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="ContactoEmail" aria-describedby="emailHelp" placeholder="seiya@pegaso">
+                      <div id="emailHelp" class="form-text"> <i>No compartiremos tu correo electrónico con nadie más.</i></div>
+                    </div>
+                    <!-- SIGNOS -->
+                    <div class="mb-3">
+                      <label for="ContactoSigno  " class="form-label">Signo</label>
+                      <select id="disabledSelect" class="form-select">
+                        <option>Aries</option>
+                        <option>Tauro</option>
+                        <option>Géminis</option>
+                        <option>Cáncer</option>
+                        <option>Leo</option>
+                        <option>Virgo</option>
+                        <option>Libra</option>
+                        <option>Escorpio</option>
+                        <option>Sagitario</option>
+                        <option>Capricornio</option>
+                        <option>Acuario</option>
+                        <option>Piscis</option>
+                      </select>
+                    </div>
+                    <!-- CHECKBOX -->
+                    <div class="mb-3 ms-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="ContactoCheck">
+                      <label class="form-check-label form-label" for="ContactoCheck">Quiero recibir predicciones actualizadas sobre mi signo</label>
+                    </div>                 
+                </form>                     
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <a class="btn btn-primary" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#VentanaSuscripción2">SUSCRIBIRME</a>
+              </div>
+          </div>          
+        </div>
+      </div>
+      <!-- Ventana modal del mensaje de suspcricpión -->
+      <div class="modal fade" id="VentanaSuscripción2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" id="Modal001">
+            <img src="/assets/mensaje1.jpg" class="d-block w-100" alt="...">
+            <h2 class="dispaly-1">¡Gracias por suscribirte!</h2>
+            <p> Pronto te llegarán novedades y todas las predicciones sobre tu signo para el año 2022</i></p>
+            <script src="/js/bootstrap.bundle.js"> </script>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div style="height: 70px">
+  </div>
+
+  <div>
+
+        <div class="tiutlo-entrada">
+          <h2> EL VIRUS INFORMPATICO DE TU SIGNO</h2>
+          <p>¿Cómo actuaría un virus informático que tuviera las características de un signo determinado?</p>
+        </div>
+
+        <!--===============================
+          ==            Tabla              ==
+          ================================-->
+        <table class="table">
+
+          <!--     ==========
+          ==   Cabeza de la tabla    ==-->
+          <thead class="titulo-tabla">
+            <tr> 
+            </tr>
+          </thead>
+
+          <!--      ========
+          ==     cuerpo de tabla    ==-->
+          <tbody>
+
+            <!--===============================
+            ==            ARIES              ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/aries.jpg" alt="aries"></th>
+              <td>
+                <h3>EL VIRUS DE ARIES</h3>
+                <span class="verde">Atacará a otros sistemas, de tal forma que tu computadora sea ¡la primera, la más veloz
+                  en descargárselo
+                  todo!</span>
+              </td>
+            </tr>
+
+            <!--===============================
+            ==             TAURO             ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/tauro.jfif" alt=""></th>
+              <td>
+                <h3>EL VIRUS DE TAURO</h3>
+                <span class="verde">Hará copias de seguridad de los datos almacenados en tu disco duro, sin permitirte
+                  borrar nada, ¡nunca!
+                </span>
+              </td>
+            </tr>
+
+            <!--===============================
+            ==            GÉMINIS           ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/geminis.jpg" alt=""></th>
+              <td colspan="2">
+                <h3>EL VIRUS DE GEMINIS </h3>
+                <span class="verde">Abrirá todas las ventanas que pueda en tu navegador. Una, para buscar
+                  chismorreos en Google; otra, para leer el periódico; otra, para jugar en línea, etc. Además, conectará
+                  todos los aparatos electrónicos (scanner, impresora, fax, teléfono móvil, etc.) para que funcionen
+                  ininterrumpidamente.</span>
+              </td>
+
+            </tr>
+
+            <!--===============================
+            ==             CÁNCER            ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/cancer.jpg" alt=""></th>
+              <td colspan="2">
+                <h3>EL VIRUS DE CANCER</h3>
+                <span class="verde">Abrirá continuamente ventanitas en el escritorio con información sobre recetas de
+                  cocina, ideas para
+                  decorar la casa, consejos de jardinería y, por supuesto, con mensajes urgentes de tu
+                  madre.</span>
+              </td>
+            </tr>
+
+            <!--===============================
+            ==           LEO                 ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/-leo.jpg" alt=""></th>
+              <td colspan="2">
+                <h3>EL VIRUS DE LEO </h3>
+                <span class="verde">Se descargará el rugido del león de la Metro Goldwyn Mayer y reproducirá el
+                  archivo cada vez que enciendas el ordenador.</span>
+              </td>
+            </tr>
+
+            <!--===============================
+            ==         VIRGO                 ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/virgo.jpg" alt=""></th>
+              <td colspan="2">
+                <h3>EL VIRUS DE VIRGO</h3>
+                <span class="verde">Eliminará cualquier archivo de tu equipo que no haya sido usado en el lapso de
+                  un mes, de paso que ordena la información restante según le parezca el criterio más apropiado
+                  (alfabéticamente, numéricamente, por fecha, etc.).</span>
+              </td>
+            </tr>
+
+            <!--===============================
+            ==           LIBRA               ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/libra.jpg" alt=""></th>
+              <td colspan="2">
+                <h3>EL VIRUS DE LIBRA</h3>
+                <span class="verde">Te pedirá confirmación varias veces antes de realizar cualquier tarea: “¿Está
+                  seguro de que desea apagar el equipo? ¿De verdad? ¿No le apetecería continuar trabajando?…”</span>
+              </td>
+            </tr>
+
+            <!--===============================
+            ==          ESCORPIO             ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/escorpio.jpg" alt=""></th>
+              <td colspan="2">
+                <h3>EL VIRUS DE ESCORPIO</h3>
+                <span class="verde">Instalará automáticamente y sin avisar las aplicaciones más extrañas que
+                  encuentre a lo largo y ancho de la red.</span>
+              </td>
+            </tr>
+
+
+            <!--===============================
+            ==           SAGITARIO           ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/sagittarius.jpg" alt=""></th>
+              <td colspan="2">
+                <h3>EL VIRUS DE SAGITARIO</h3>
+                <span class="verde">Navegará felizmente y sin descanso por remotos lugares, instalando
+                  información sobre viajes y aventuras.</span>
+              </td>
+            </tr>
+
+
+            <!--===============================
+            ==        CAPRICORNIO            ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/capricornio.jpg" alt=""></th>
+              <td colspan="2">
+                <h3>EL VIRUS DE CAPRICORNIO </h3>
+                <span class="verde">Te bombardeará con información útil: el estado del tráfico en tu ciudad,
+                  el clima, noticias de la actualidad política y financiera, etc. Será tan constante que te acabará
+                  gustando.</span>
+              </td>
+            </tr>
+
+
+            <!--===============================
+            ==           ACUARIO             ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/acuario.jpg" alt=""></th>
+              <td colspan="2">
+                <h3>EL VIRUS DE ACUARIO</h3>
+                <span class="verde">Cambiará las fuentes que tienes instaladas, sustituirá los colores que usas
+                  por unos más llamativos y desordenará tus bases de datos. ¡Adiós al orden y al convencionalismo!</span>
+              </td>
+            </tr>
+
+            <!--===============================
+            ==          PISCIS               ==
+            ================================-->
+            <tr>
+              <th scope="row"><img class="table-image" src="/assets/entradas/virus-informatico-gallery/picis.jpg" alt=""></th>
+              <td colspan="2">
+                <h2>EL VIRUS DE PISCIS</h2>
+                <span class="verde">Te informará de las predicciones astrológicas para tu signo del zodiaco, de
+                  paso que busca más información paranormal y esotérica. En el momento más ineperado, apagará el equipo.
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!--===============================
+          ==        COMENTARIOS            ==
+          ================================-->
+        <div>
+          <!-- COMENTARIO 1 -->
+          <div class="comentario">
+            <div class="px-5">
+              <h6 class="letra"> Joe Goldberg </h6>
+              <img src="/assets/entradas/virus-informatico-gallery/you.jfif" alt="">
+            </div>
+            <p class="text mt-5">
+              Okay... entonces le instalaré el virus de tauro a Beck, para que cada vez que encienda su nootebok aparezcan
+              fotos nuestras que le recueden lo felices que eramos juntos y que se equivocó al dejarme. Y no podrá borrarlas
+              jamás! Lo pondré en marcha ahora mismo.
+            </p>
+          </div>
+
+          <!-- COMENTARIO 2 -->
+          <div class="comentario">
+            <div class="px-5">
+              <h6> ANONYMOUS </h6>
+              <img src="/assets/entradas/virus-informatico-gallery/Anonymous.jfif" alt="">
+            </div>
+            <p class="text mt-5">
+              Mmm... seguiré de cerca esta página
+            </p>
+          </div>
+
+          <!-- COMENTARIO 3 -->
+          <div class="comentario">
+            <div class="px-5">
+              <h6>Chinwenwencha</h6>
+              <img src="/assets/entradas/virus-informatico-gallery/chinwenwencha.jpg" alt="">
+            </div>
+            <p class="text mt-5">
+              Ese viru de acuario e un chinwenwencha
+            </p>
+          </div>
+
+          <!-- COMENTAR -->
+          <div class="container">
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label h3">Dejanos tu comentario!</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Escribir comentario"></textarea>
+            </div>
+            <a href="/pages/error404.html" class="btn btn-secondary">Enviar Comentario</a>
+          </div>
+        </div>
+        <br><br>
+
+  </div>
+
+  <footer>
+		<div id="izquierda" class="text-center">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i> Facebook</a>
+			<a href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a>
+			<a href="https://twitter.com"><i class="fab fa-twitter-square"></i> Twitter</a>
+
+		</div>
+		<div id="centro">
+			<p class="">
+				&copy; Todos los derechos reservados para el Creador - 2021
+			</p>
+		</div>
+
+		<div id="derecha">
+          <a href="/index.html">
+            <img src="/assets/logo blanco 2.png" alt="logo Astral" width="100" height="100">
+          </a>
+		</div>		
+	</footer>
+
+  <!--===============================
+  ==         java script           ==
+  ================================-->
+  <script src="/js/bootstrap/bootstrap.js"></script>
+</body>
+
+</html>

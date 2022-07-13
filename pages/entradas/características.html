@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRAL</title>
+
+    <!-- LINK DE FUENTE AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ESTILOS BOOTSTRAP -->
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+
+    <!-- ESTILO PROPIOS -->
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <!-- LOGO -->
+    <link rel="shortcut icon" href="/assets/logoHead.png">
+
+</head>
+
+<body class="background-astro">
+
+    <!-- ====================
+    ==       HEADER        ==
+    ========================= -->
+  <div id="header">
+    <header>
+      <!-- navbar open -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
+        <div class="navbar-container container-fluid m-0 p-0">
+          <!-- LOGO -->
+          <a class="logo" href="/index.html">
+            <img src="/assets/astral 3.png" alt="logo Astral" width="35" height="35"> ASTRAL
+          </a>
+          <!-- MENU DEBLEGABLE -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:25px;"></i>
+            </span>
+          </button>
+          <!-- MENU -->
+          <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="/pages/conocenos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="/pages/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#VentanaModalSusctiption">Suscripcion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" aria-current="page" href="/pages/login.html"> Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Ventana Modal de la Suscripción -->
+      <div class="modal fade" id="VentanaModalSusctiption" tabindex="-1"       aria-labelledby="suscripcionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <!-- Modal header -->
+              <div class="modal-header">
+                <h5 class="modal-title-S" id="suscripcionModalLabel">SUSCRIPCIÓN</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form>
+                    <!-- MAIL -->
+                    <div class="mb-3">
+                      <label for="ContactoEmail" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="ContactoEmail" aria-describedby="emailHelp" placeholder="seiya@pegaso">
+                      <div id="emailHelp" class="form-text"> <i>No compartiremos tu correo electrónico con nadie más.</i></div>
+                    </div>
+                    <!-- SIGNOS -->
+                    <div class="mb-3">
+                      <label for="ContactoSigno  " class="form-label">Signo</label>
+                      <select id="disabledSelect" class="form-select">
+                        <option>Aries</option>
+                        <option>Tauro</option>
+                        <option>Géminis</option>
+                        <option>Cáncer</option>
+                        <option>Leo</option>
+                        <option>Virgo</option>
+                        <option>Libra</option>
+                        <option>Escorpio</option>
+                        <option>Sagitario</option>
+                        <option>Capricornio</option>
+                        <option>Acuario</option>
+                        <option>Piscis</option>
+                      </select>
+                    </div>
+                    <!-- CHECKBOX -->
+                    <div class="mb-3 ms-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="ContactoCheck">
+                      <label class="form-check-label form-label" for="ContactoCheck">Quiero recibir predicciones actualizadas sobre mi signo</label>
+                    </div>                 
+                </form>                     
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <a class="btn btn-primary" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#VentanaSuscripción2">SUSCRIBIRME</a>
+              </div>
+          </div>          
+        </div>
+      </div>
+      <!-- Ventana modal del mensaje de suspcricpión -->
+      <div class="modal fade" id="VentanaSuscripción2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" id="Modal001">
+            <img src="/assets/mensaje1.jpg" class="d-block w-100" alt="...">
+            <h2 class="dispaly-1">¡Gracias por suscribirte!</h2>
+            <p> Pronto te llegarán novedades y todas las predicciones sobre tu signo para el año 2022</i></p>
+            <script src="/js/bootstrap.bundle.js"> </script>
+        </div>
+      </div>
+    </header>
+  </div>
+
+    <div style="height: 70px">
+    </div>
+  
+    <div class="tiutlo-entrada">
+      <h2> CARACTERÍSTICAS DE LOS SIGNOS</h2>
+      <p>Cada uno de los signos del zodiaco tiene unas características particulares que los definen.</p>
+    </div>
+
+<div class="table-responsive">
+    <table class="table">
+        <!--
+        =============================================
+        ===      TITULOS DE LA TABLA      ====
+        ============================================= -->
+        <thead>
+            <tr class="table-primary">
+                <th scope="col">SIGNO</th>
+                <th scope="col">CARACTERISTICAS GENERALES</th>
+                <th scope="col">VIRTUDES Y DEFECTOS</th>
+                <th scope="col">REFERENCIA</th>
+            </tr>
+        </thead>
+        <tbody>
+                <!--
+=============================================
+===             ARIES               ====
+============================================= -->
+
+                <tr>
+                    <th scope="row"><img class="table-image" src="/assets/entradas/images/zodiac-fluor-aries.jpg" alt="aries">
+                    </th>
+                    <!-- CARACTERISTICAS -->
+                    <td>
+                        <h3>Desde el 21 de Marzo al 20 de Abril</h3>
+                        <h5> Los arianos son sumamente impulsivos, dinámicos, activos, entusiastas y emprendedores.
+                            Poseen
+                            un
+                            espíritu
+                            inquieto y arriesgado que exige acción constante. Sumamente impacientes, se lanzan a
+                            emprender
+                            cualquier
+                            proyecto pero se cansan con rapidez. Son abiertos y sinceros, pero su falta de diplomacia y
+                            su brusquedad suelen ocasionarles problemas en el trato con los demás. Se tornan
+                            intolerantes y hasta incluso agresivos, cuando los otros no pueden seguirles el ritmo.</h5>
+
+
+                    </td>
+
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste"><span class="celeste">*Virtudes: </span> </span>
+                            <h5>Son abiertos, sinceros y francos.</h5>
+                            <br>
+                            <br>
+
+                            <span class="celeste">*Defectos: </span>
+                            <h5>Son impacientes, agresivos,egoistas y bruscos.</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span>
+                            <h5>>Marte</h5>
+                            <span class="rosa">*Elemento:</span>
+                            <h5>>Fuego</h5> <br>
+                            <span class="rosa">*Color:</span>
+                            <h5>>Rojo</h5> <br>
+                            <span class="rosa">*Metal:</span>
+                            <h5>>Rojo</h5>
+                            <span class="rosa"><span class="rosa">*Piedras:</span></span>
+                            <h5>>Rojo</h5> <br>
+                            <span class="rosa">*Árbol:</span>
+                            <h5>>Rojo</h5> <br>
+                            <span class="rosa">*Símbolo:</span>
+                            <h5>>El Carnero</h5> <br>
+                            <span class="rosa">*Frase clave:</span>
+                            <h5>>YO SOY</h5>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--
+                =============================================
+                ===      TAURO                      ====
+                ============================================= -->
+                <tr>
+                    <th scope="row"> <img class="table-image" src="/assets/entradas/images/zodiac-fluor-tauro.jpg" alt="tauro">
+                    </th>
+                    <td>
+                        <!-- CARACTERISTICAS -->
+                        <h3>Desde el 21 de Abril al 21 de Mayo</h3>
+                        <h5>Estas personas son reservadas, prácticas y constantes en toda actividad que realicen. Aman
+                            el
+                            confort y
+                            la comodidad, detestan los cambios y, debido a su marcado sentido del valor de las cosas,
+                            puden
+                            parecer
+                            exesivamente materialistas frente a los demás. Necesitan seguridad: por eso pueden tornarse
+                            posesivos y
+                            hasta avaros, ya que a través de sus posesiones materiales se sienten sólidos y confiados
+                            ante
+                            la vida.
+                            Sus sentimientos son fuertes y muy conservadores.</h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste"><span class="celeste">*Virtudes: </span> </span> <br>
+                            <h5>Son muy pacientes, confiables y tranquilos.</h5> <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span>
+                            <h5>Son obstinados, perezosos, tacaños y posesivos</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span>  <h5>Venus</h5>
+                            <span class="rosa">*Elemento:</span>  <h5>Tierra</h5>
+                            <span class="rosa">*Color:</span>  <h5>Verde</h5>
+                            <br>
+                            <span class="rosa">*Metal:</span>  <h5>Cobre</h5>
+                            <span class="rosa">*Piedras:</span>  <h5>Esmeralda-Lapislázuli-Cuarzo ahumado</h5>
+                            <br>
+                            <span class="rosa">*Árbol:</span> <h5> Cedro</h5>
+                            <span class="rosa">*Símbolo:</span>  <h5>El Toro</h5>
+                            <span class="rosa">*Frase clave:</span>  <h5>YO TENGO</h5>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--
+                =============================================
+                ===      GEMINIS                      ====
+                ============================================= -->
+                <tr>
+                    <th scope="row"><img class="table-image" src="/assets/entradas/images/zodiac-fluor-geminis.jpg" alt="">
+                    </th>
+                    <td>
+                        <!-- CARACTERISTICAS -->
+                        <h3>Desde el 22 de Mayo al 21 de Junio</h3>
+                        <h5> Inquietos, versátiles y comunicativos, son muy adaptables, tanto a otras personas como a
+                            otros ambientes.
+                            No nacieron para estarse quietos y mucho menos callados. Cuando hablan siempre gesticulan
+                            con
+                            manos y brazos. Tienden a analizar y racionalizarlo todo, incluso sus emociones, por que son
+                            mas intelectuales que emocionales. No toleran la rutina y la monotonía; por tal motivo
+                            cualquier actividad que realicen debe permitirles movilidad y cambios. Sumamente curiosos,
+                            no son
+                            fiables a la hora de guardar un secreto.
+                        </h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste">*Virtudes: </span> <br>
+                            <h5> Son comunicativos, ágiles e ingeniosos.</h5> <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span> <h5>Son inconstantes, superficiales y charlatanes</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span>  <h5>Mercurio</h5>
+                            <span class="rosa">*Elemento:</span>  <h5>Aire</h5>
+                            <br>
+                            <span class="rosa">*Color:</span>  <h5>Amarillo</h5>
+                            <span class="rosa">*Metal:</span>  <h5>Mercurio</h5>
+                            <span class="rosa">*Piedras:</span>  <h5>Topacio</h5>
+                            <br>
+                            <span class="rosa">*Árbol:</span>  <h5>Olivo</h5>
+                            <br>
+                            <span class="rosa">*Símbolo:</span>  <h5>Los Gemelos</h5> <br>
+                            <span class="rosa">*Frase clave:</span> <h5>YO PIENSO</h5>
+                        </div>
+                    </td>
+                </tr>
+                </tr>
+
+                <!--
+                =============================================
+                ===      CANCER                      ====
+                ============================================= -->
+                <tr>
+                    <th scope="row"><img class="table-image" src="/assets/entradas/images/cancer-fluor.jpg" alt=""></th>
+                    <td>
+                        <h3>
+                            Desde el 22 de Junio al 22 de Julio
+                        </h3> <!-- CARACTERISTICAS -->
+                        <h5> Imaginativos, intuitivos y muy sensibles, los cancerianos gozan de una excelente memoria,
+                            tenacidad y capacidad
+                            reflexiva. Debido a su gran sensibilidad, pueden ofenderse fácilmente, ocultandose detrás de
+                            su
+                            caparazón y
+                            adaptando actitudes
+                            impenetrables. Protectores, cariñosos, soñadores y románticos, son amantes de la familia y
+                            del
+                            hogar. Su humor es
+                            muy cambiante y sus introversiones frecuentes. Nunca olvidan agravios debido a sus
+                            introversiones frecuentes.
+                            Nunca olvidan agravios debido a su prodigiosa memoria.</h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste">*Virtudes: </span> <br>
+                            <h5>Son tenaces, confiables, tiernos y simpáticos.</h5> <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span> <h5>Son susceptibles, caprichosos e hipersensibles.</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span> <h5>Luna</h5>
+                            <span class="rosa">*Elemento:</span> <h5>Agua</h5>
+                            <span class="rosa">*Color:</span><h5> Blanco-Plateado</h5>
+                            <br>
+                            <span class="rosa">*Metal:</span> <h5>Plata</h5> <br>
+                            <span class="rosa">*Piedras:</span> <h5>Perla-Cuarzo lechoso</h5> <br>
+                            <span class="rosa">*Árbol:</span> <h5>Nogal</h5>
+                            <span class="rosa">*Símbolo:</span><h5> El Cangrejo</h5>
+                            <br>
+                            <span class="rosa">*Frase clave:</span><h5>YO SIENTO</h5>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--
+                =============================================
+                ===      LEO                      ====
+                ============================================= -->
+                <tr>
+                    <th scope="row"><img class="table-image" src="/assets/entradas/images/leo-flour" alt=""></th>
+                    <td>
+                        <!-- CARACTERISTICAS -->
+                        <h3>Desde el 23 de Julio al 23 de Agosto</h3>
+                        <h5> Son generosos, muy alegres y divertidos. poseen capacidad de liderazgo y un natural don de
+                            mando que les sitúa
+                            frecuentemente en lugares de responsabilidad. Buscan siempre el aplauso de los demás por que
+                            necesitan ser el
+                            centro de atención y muy rara vez pasan inadvertidos. Magnánimos, leales y compasivos,
+                            atraen
+                            a los otros haciéndoles
+                            sentir seguros en su compañia. Sus sentimientos son fuertes y sinceros.</h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste">*Virtudes: </span> <br>
+                            <h5>Son nobles, bondadosos y brillantes.</h5>
+                            <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span> <br>
+                            <h5>Son egocéntricos, despotas y dominantes.</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span> <h5>Sol</h5>
+                            <span class="rosa">*Elemento:</span> <h5>Fuego</h5> <br>
+                            <span class="rosa">*Color:</span> <h5>Dorado</h5> <br>
+                            <span class="rosa">*Metal:</span> <h5>Oro</h5> <br>
+                            <span class="rosa">*Piedras:</span> <h5>Rubi-Diamante</h5><br>
+                            <span class="rosa">*Árbol:</span> <h5>Jacarandá</h5>
+                            <span class="rosa">*Símbolo:</span> <h5>El león </h5><br>
+                            <span class="rosa">*Frase clave:</span> <h5>YO QUIERO</h5>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--
+                =============================================
+                ===      VIRGO                      ====
+                ============================================= -->
+                <tr>
+                    <th scope="row"><img class="table-image" src="/assets/entradas/images/zodiac-fluor-virgo.jpg" alt="">
+                    </th>
+
+                    <td>
+                        <!-- CARACTERISTICAS -->
+                        <h3>Desde el 24 de Agosto hasta el 23 de Septiembre </h3>
+                        <h5> Las personas de este signo son adaptables, prácticas y trabajadoras. Son muy serviciales,
+                            tanto
+                            con su familia
+                            como con sus relaciones. En todo lo que hacen son analíticos, incluso en lo referente a sus
+                            sentimientos.
+                            Preocupados por el orden y la limpieza, en cualquier actividad que realizen son siempre
+                            minuciosos. Se esfuerzan
+                            por alcanzar el objetivo de la perfección, pero su exageración los puede llevar a actitudes
+                            demasiado críticas.</h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste">*Virtudes: </span>
+                            <br><h5> Son inteligentes, trabajadores e íntegros.</h5> <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span> <br>
+                            <h5>Son criticones, cavilosos e hipocondríacos.</h5> <div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span> <h5>Mercurio</h5>
+                            <span class="rosa">*Elemento:</span> <h5>Tierra.</h5>
+                            <span class="rosa">*Color:</span> <h5>Gris-Marrón</h5><br>
+                            <span class="rosa">*Metal:</span> <h5>Bronce</h5>
+                            <span class="rosa">*Piedras:</span> h5
+                            Jade-Cuarzo verde<br>
+                            <span class="rosa">*Árbol:</span> <h5>Acacia</h5>
+                            <span class="rosa">*Símbolo:</span> <h5>La Virgen</h5> <br>
+                            <span class="rosa">*Frase clave:</span> <h5>YO ANALIZO</h5>
+                        </div>
+                    </td>
+                </tr>
+
+
+                <!--
+                =============================================
+                ===      LIBRA                      ====
+                ============================================= -->
+                <tr>
+                    <th scope="row"><img class="table-image" src="/assets/entradas/images/zodiac-fluor-libra.jpg" alt="">
+                    </th>
+                    <td>
+                        <!-- CARACTERISTICAS -->
+                        <h3>Desde el 24 de Septiembre al 23 de Octubre</h3>
+                        <h5> Amables, conciliadores y simpáticos, los librianos suelen llevarse bien con todo el mundo.
+                            Buscan continuamente
+                            la armonia, la belleza y el equilibrio, sienten horror por las disputas y no toleran estar
+                            en
+                            ambientes hostiles.
+                            Amantes de la tranquilidad, poseen sentido artístico. son incapaces de vivir solos y,aunque
+                            se
+                            adapten fácilmente
+                            a las circunstancias, también pueden ser extremadamente exigentes y quisquillosos. Poseen un
+                            enorme sentido de la
+                            justicia pero son indecisos y se dejan influenciar fácilmente por la opinión de los demás.
+                        </h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste">*Virtudes: </span> <br>
+                            <h5>Son justos, conciliadores y pacífico.</h5> <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span> <br>
+                            <h5>Son indolentes, indecisos y dependientes.</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span> <h5>Venus</h5>
+                            <span class="rosa">*Elemento:</span> <h5>Aire</h5> <br>
+                            <span class="rosa">*Color:</span> <h5>Azul y Rosa</h5> <br>
+                            <span class="rosa">*Metal:</span> <h5>Cobre</h5>
+                            <span class="rosa">*Piedras:</span><h5> Zafiro-Aguamarina</h5> <br>
+                            <span class="rosa">*Árbol:</span> <h5>Mirto</h5>
+                            <span class="rosa">*Símbolo:</span> <h5>La Balanza</h5> <br>
+                            <span class="rosa">*Frase clave:</span> <h5>YO ARMONIZO</h5>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--
+                =============================================
+                ===      ESCORPIO                      ====
+                ============================================= -->
+                <tr>
+                    <th scope="row"><img class="table-image"
+                            src="/assets/entradas/images/zodiac-fluor-escorpio.jpg_186469708.webp" alt=""></th>
+
+                    <td>
+                        <!-- CARACTERISTICAS -->
+                        <h3>Desde el 24 de Octubre al 22 de Noviembre</h3>
+                        <h5> Tienen un fuerte carácter. Se destacan por su notable percepción. Enérgicos, intensos y
+                            penetrantes, son
+                            pasionales en todo lo que hacen, no tienen término medio; por eso puden ser personas muy
+                            queridas
+                            o
+                            muy odiadas.
+                            Posee un gran poder de convicción, fuerza de voluntad y capacidad de resistencia. Sutiles,
+                            reservados e
+                            intuitivos, saben guardar secretos</h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste">*Virtudes: </span> <br>
+                            <h5> Son reservados, perceptivos y confiables.</h5> <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span> <br>
+                            <h5>Destructivos, vengativos y libertinos.</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span> <h5>Plutón y Marte </h5><br>
+                            <span class="rosa">*Elemento:</span> <h5>Agua</h5>
+                            <span class="rosa">*Color:</span> <h5>Rojo oscuro (índigo)</h5> <br>
+                            <span class="rosa">*Metal:</span><h5> Hierro y Plutonio</h5> <br>
+                            <span class="rosa">*Piedras:</span> <h5>Ónix-Turmalina negra-Diamante</h5> <br>
+                            <span class="rosa">*Árbol:</span> <h5>Ciprés</h5>
+                            <span class="rosa">*Símbolo:</span> <h5>El Escorpión</h5> <br>
+                            <span class="rosa">*Frase clave:</span> <h5>YO DESEO</h5>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--
+                =============================================
+                ===      SAGITARIO                      ====
+                ============================================= -->
+                <tr>
+                    <th scope="row"><img class="table-image" src="/assets/entradas/images/sagitario-fluor" alt=""></th>
+                    <td>
+                        <!-- CARACTERISTICAS -->
+                        <h3>Desde el 23 de Noviembre hasta el 22 de Diciembre</h3>
+                        <h5> Son sinceros, francos, joviales, abiertos, generosos, idealistas y optimistas. Amantes de
+                            la
+                            libertad,
+                            no toleran las restricciones. Son filosóficos y sienten aspiración por las cosas elevadas.
+                            Poseedores de
+                            buen criterio y buen juicio para las cosas. Les atraen los deportes y los juegos de azar.
+                            Son
+                            exploradores
+                            natos y les encantan los viajes y las aventuras. Sus sentimientos son fuertes y sinceros,
+                            pero
+                            un tanto
+                            inconstantes.</h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste">*Virtudes: </span> <br>
+                            <h5>Son diplomaticos, humanitarios y sinceros.</h5> <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span> <br>
+                            <h5>Son exagerados, impacientes y fanfarrones.</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span> <h5>Júpiter</h5>
+                            <span class="rosa">*Elemento:</span> <h5>Fuego</h5> <br>
+                            <span class="rosa">*Color:</span> <h5>Púrpura y azul oscuro</h5> <br>
+                            <span class="rosa">*Metal:</span> <h5>Estaño</h5>
+                            <span class="rosa">*Piedras:</span> <h5>Topacio-Lapislázuli</h5> <br>
+                            <span class="rosa">*Árbol:</span> <h5>Abedul</h5>
+                            <span class="rosa">*Símbolo:</span> <h5>El Centauro </h5><br>
+                            <span class="rosa">*Frase clave:</span> <h5>YO COMPRENDO</h5>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--
+                =============================================
+                ===      CAPRICORNIO                      ====
+                ============================================= -->
+                <tr>
+                    <th scope="row"><img class="table-image" src="/assets/entradas/images/capricornio-fluor.jpg" alt="">
+                    </th>
+
+                    <td>
+                        <!-- CARACTERISTICAS -->
+                        <h3>Desde el 22 de Diciembre al 21 de Enero</h3>
+                        <h5> Pacientes y perseverantes, adoptan una actitud seria ante la vida. En todo lo que hacen son
+                            practicos, responsables, metódicos y ambiciosos. Tienen capacidad para organizar y planificar. Todo lo
+                            que ganan y conquistan en la vida es gracias a su trabajo y empeño. Conservadores, concretos y nada
+                            soñadores, mentalmente son fríos y calculadores</h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste">*Virtudes: </span> <br>
+                            <h5> Son inteligentes, pacientes y perseverantes.</h5> <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span> <br>
+                            <h5> Son pesimistas, depresivos e interesados.</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span> <h5>Saturno</h5>
+                            <span class="rosa">*Elemento:</span> <h5>Tierra</h5>
+                            <span class="rosa">*Color:</span> <h5>Negro y colores oscuros en general</h5> <br>
+                            <span class="rosa">*Metal:</span> <h5>Plomo</h5>
+                            <span class="rosa">*Piedras:</span> <h5>Turmalina-Azurita</h5> <br>
+                            <span class="rosa">*Árbol:</span> <h5>Pino</h5> <br>
+                            <span class="rosa">*Símbolo:</span> <h5>El Chivo</h5> <br>
+                            <span class="rosa">*Frase clave:</span> <h5>YO AMBICIONO</h5>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--
+                    =============================================
+                    ===      ACUARIO                      ====
+                    ============================================= -->
+                <tr>
+                    <th scope="row"><img class="table-image" src="/assets/entradas/images/acuario-fluor" alt=""></th>
+
+                    <td>
+                        <!-- CARACTERISTICAS -->
+                        <h3>Desde el 21 de Enero al 18 de febrero</h3>
+                        <h5> Son idealistas y originales en todolo que hacen. Aman, por encima de todo, la libertad y la
+                            independencia.
+                            Pocos convencionales y revolucionarios, su pensamiento se adelanta a las opiniones de su
+                            época. Se destacan en actividades creativas, inventivas y originales. Son fraternales, humanitarios y hacen un culto de la amistad.</h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste">*Virtudes: </span> <br>
+                            <h5>Son idealistas, progresistas y alturistas.</h5> <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span> <br>
+                            <h5>Son rebeldes, excéntricos y desconfiados.</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span> <h5>Urano y Saturno</h5> <br>
+                            <span class="rosa">*Elemento:</span> <h5>Aire</h5>
+                            <span class="rosa">*Color:</span> <h5>Azul eléctrico</h5> <br>
+                            <span class="rosa">*Metal:</span> <h5>Plomo y Uranio</h5> <br>
+                            <span class="rosa">*Piedras:</span> <h5>Aguamarina-cuarzo verde</h5> <br>
+                            <span class="rosa">*Árbol:</span> <h5>Fresno</h5>
+                            <span class="rosa">*Símbolo:</span> <h5>El Aguador</h5><br>
+                            <span class="rosa">*Frase clave:</span> <h5>YO SE</h5>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--
+                =============================================
+                ===      PISCIS                      ====
+                ============================================= -->
+                <tr>
+                    <th scope="row"><img class="table-image" src="/assets/entradas/images/piscis-fluor" alt=""></th>
+                    <td>
+                        <!-- CARACTERISTICAS -->
+                        <h3>Desde el 19 de Febrero al 20 de Marzo</h3>
+                        <h5> Sensibles, intuitivos y bondadosos, son los más espirituales del zodíaco, pero también
+                            pueden ser los mas viciosos. Simpáticos, comprensivos y hospitalarios, siempre están dispuestos a ofrecer se
+                            ayuda. Se adaptan fácilmente a las circunstancias pero también suelen oscilar continuamente entre
+                            los extremos de la alegria y la depresión. No les gusta discutir por que son pacifistas por naturaleza; evitan
+                            los enfrentamientos y, tal vez, por eso tengan fama de huidizos</h5>
+                    </td>
+                    <!-- VIRTUDES Y DEFECTOS -->
+                    <td>
+                        <div class="letra">
+                            <span class="celeste">*Virtudes: </span> <br>
+                            <h5>Son intuitivos, adaptables y dóciles.</h5> <br>
+                            <br>
+                            <span class="celeste">*Defectos: </span> <br>
+                            <h5>Son confusos, escapistas y perezosos.</h5>
+                        </div>
+                    </td>
+                    <!-- INFO ADICIONAL -->
+                    <td>
+                        <div class="letra">
+                            <span class="rosa">*Regencia:</span> <h5>Neptuno y Júpiter</h5><br>
+                            <span class="rosa">*Elemento:</span> <h5>Agua</h5>
+                            <span class="rosa">*Color:</span> <h5>Verde mar</h5>
+                            <span class="rosa">*Metal:</span> <h5>Estaño</h5>
+                            <span class="rosa">*Piedras:</span> <h5>Cuarzo cristalino-Venturina-Aguamarina</h5> <br>
+                            <span class="rosa">*Árbol:</span> <h5>Sauce</h5>
+                            <span class="rosa">*Símbolo:</span> <h5>Dos Peces</h5> <br>
+                            <span class="rosa">*Frase clave:</span> <h5>YO CREO</h5>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+        
+
+    </div>
+    <!--
+=============================================
+===      COMENTARIOS                      ====
+============================================= -->
+
+        <!-- COMENTARIO 1 -->
+
+        <div class="comentario">
+
+            <div class="px-5">
+                <h6 class="letra ">Patricio Star </h6>
+                <img src="/assets/entradas/images/avatar 1.jpg" alt="">
+            </div>
+
+            <p class="text mt-5">
+                Yo soy Virgo!! jaja
+            </p>
+        </div>
+
+    <!-- COMENTARIO 2 -->
+
+    <div class="comentario">
+
+        <div class="px-5">
+            <h6 class="letra">JOHN </h6>
+            <h6 class="letra">SALCHICHON </h6>
+            <img src="/assets/entradas/images/avatar 3 .jpeg" alt="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <p class="text mt-5">
+            Muy cierto lo que dice de los Arianos. Somos guerreros de la vida y nos gusta la accion!
+        </p>
+    </div>
+    </div>
+
+
+
+    <!-- COMENTARIO 3 -->
+
+    <div class="comentario">
+
+        <div class="px-5">
+            <h6 class="letra">PROFE MARTIN </h6>
+            <img src="/assets/entradas/images/avatar 2 jpg.jpg" alt="">
+        </div>
+
+        <p class="text mt-5 ">
+            Muy acertado lo de Escorpio, escuche por ahí que somos el mejor signo jaja. Excelente trabajo chicos .
+            Aprobados!
+        </p>
+    </div>
+
+
+    <div class="container">
+        <div class="mb-3 mt-5">
+            <label for="exampleFormControlInput1" class="form-label h3">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu Nombre">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label h3">Dejanos tu comentario!</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Escribir comentario"></textarea>
+        </div>
+
+        <a href="/pages/error404.html" class="btn btn-secondary">Enviar Comentario</a>
+    </div>
+    <br>
+    <br>
+
+
+    <footer>
+		<div id="izquierda" class="text-center">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i> Facebook</a>
+			<a href="https://www.instagram.com"><i class="fab fa-instagram"></i>Instagram</a>
+			<a href="https://twitter.com"><i class="fab fa-twitter-square"></i>Twitter</a>
+
+		</div>
+		<div id="centro">
+			<p class="">
+				&copy; Todos los derechos reservados para el Creador - 2021
+			</p>
+		</div>
+
+		<div id="derecha">
+          <a href="/index.html">
+            <img src="/assets/logo blanco 2.png" alt="logo Astral" width="100" height="100">
+          </a>
+		</div>		
+	</footer>
+
+    <script src="/js/bootstrap/bootstrap.js"></script>
+</body>
+
+</html>

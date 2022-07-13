@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR404</title>
+
+    <!-- LINK DE FUENTE AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ESTILOS BOOTSTRAP -->
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+
+    <!-- ESTILO PROPIOS -->
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <!-- LOGO -->
+    <link rel="shortcut icon" href="/assets/logoHead.png">
+
+</head>
+
+<body id="error-body">
+
+  <!-- ====================
+  ==       HEADER        ==
+  ========================= -->
+<div id="header">
+  <header>
+    <!-- navbar open -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
+      <div class="navbar-container container-fluid m-0 p-0">
+        <!-- LOGO -->
+        <a class="logo" href="/index.html">
+          <img src="/assets/astral 3.png" alt="logo Astral" width="35" height="35"> ASTRAL
+        </a>
+        <!-- MENU DEBLEGABLE -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:25px;"></i>
+          </span>
+        </button>
+        <!-- MENU -->
+        <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link" href="/pages/conocenos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link" href="/pages/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link" href="/pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#VentanaModalSusctiption">Suscripcion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link" aria-current="page" href="/pages/login.html"> Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Ventana Modal de la Suscripción -->
+    <div class="modal fade" id="VentanaModalSusctiption" tabindex="-1"       aria-labelledby="suscripcionModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal header -->
+            <div class="modal-header">
+              <h5 class="modal-title-S" id="suscripcionModalLabel">SUSCRIPCIÓN</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form>
+                  <!-- MAIL -->
+                  <div class="mb-3">
+                    <label for="ContactoEmail" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="ContactoEmail" aria-describedby="emailHelp" placeholder="seiya@pegaso">
+                    <div id="emailHelp" class="form-text"> <i>No compartiremos tu correo electrónico con nadie más.</i></div>
+                  </div>
+                  <!-- SIGNOS -->
+                  <div class="mb-3">
+                    <label for="ContactoSigno  " class="form-label">Signo</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option>Aries</option>
+                      <option>Tauro</option>
+                      <option>Géminis</option>
+                      <option>Cáncer</option>
+                      <option>Leo</option>
+                      <option>Virgo</option>
+                      <option>Libra</option>
+                      <option>Escorpio</option>
+                      <option>Sagitario</option>
+                      <option>Capricornio</option>
+                      <option>Acuario</option>
+                      <option>Piscis</option>
+                    </select>
+                  </div>
+                  <!-- CHECKBOX -->
+                  <div class="mb-3 ms-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="ContactoCheck">
+                    <label class="form-check-label form-label" for="ContactoCheck">Quiero recibir predicciones actualizadas sobre mi signo</label>
+                  </div>                 
+              </form>                     
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <a class="btn btn-primary" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#VentanaSuscripción2">SUSCRIBIRME</a>
+            </div>
+        </div>          
+      </div>
+    </div>
+    <!-- Ventana modal del mensaje de suspcricpión -->
+    <div class="modal fade" id="VentanaSuscripción2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" id="Modal001">
+          <img src="/assets/mensaje1.jpg" class="d-block w-100" alt="...">
+          <h2 class="dispaly-1">¡Gracias por suscribirte!</h2>
+          <p> Pronto te llegarán novedades y todas las predicciones sobre tu signo para el año 2022</i></p>
+          <script src="/js/bootstrap.bundle.js"> </script>
+      </div>
+    </div>
+  </header>
+</div>
+
+  <div style="height: 50px">
+  </div>
+
+  <!--=========================
+      =Seccion del MAINCONTENT= 
+      =========================-->
+    <main>
+        <div class="contenedor-error">
+            <h1 class="display-1">
+                <span class="text-danger">
+                    ERROR
+                </span>
+            </h1>
+            
+        </div>
+    </main>
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>

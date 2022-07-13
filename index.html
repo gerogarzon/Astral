@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTRAL</title>
+
+  <!-- LINK DE FUENTE AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ESTILOS BOOTSTRAP -->
+  <link rel="stylesheet" href="/styles/bootstrap.css">
+
+  <!-- ESTILO PROPIOS -->
+  <link rel="stylesheet" href="/styles/styles.css">
+
+  <!-- LOGO -->
+  <link rel="shortcut icon" href="/assets/logoHead.png">
+
+</head>
+
+<body id="index-body">
+
+  <!-- ====================
+    ==       HEADER        ==
+    ========================= -->
+  <div id="header">
+    <header>
+      <!-- navbar open -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
+        <div class="navbar-container container-fluid m-0 p-0">
+          <!-- LOGO -->
+          <a class="logo" href="/index.html">
+            <img src="/assets/astral 3.png" alt="logo Astral" width="35" height="35"> ASTRAL
+          </a>
+          <!-- MENU DEBLEGABLE -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:25px;"></i>
+            </span>
+          </button>
+          <!-- MENU -->
+          <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="/pages/conocenos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="/pages/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="#" data-bs-toggle="modal"
+                  data-bs-target="#VentanaModalSusctiption">Suscripcion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" aria-current="page" href="/pages/login.html"> Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Ventana Modal de la Suscripción -->
+      <div class="modal fade" id="VentanaModalSusctiption" tabindex="-1" aria-labelledby="suscripcionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal header -->
+            <div class="modal-header">
+              <h5 class="modal-title-S" id="suscripcionModalLabel">SUSCRIPCIÓN</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form>
+                <!-- MAIL -->
+                <div class="mb-3">
+                  <label for="ContactoEmail" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="ContactoEmail" aria-describedby="emailHelp"
+                    placeholder="seiya@pegaso">
+                  <div id="emailHelp" class="form-text"> <i>No compartiremos tu correo electrónico con nadie más.</i>
+                  </div>
+                </div>
+                <!-- SIGNOS -->
+                <div class="mb-3">
+                  <label for="ContactoSigno  " class="form-label">Signo</label>
+                  <select id="disabledSelect" class="form-select">
+                    <option>Aries</option>
+                    <option>Tauro</option>
+                    <option>Géminis</option>
+                    <option>Cáncer</option>
+                    <option>Leo</option>
+                    <option>Virgo</option>
+                    <option>Libra</option>
+                    <option>Escorpio</option>
+                    <option>Sagitario</option>
+                    <option>Capricornio</option>
+                    <option>Acuario</option>
+                    <option>Piscis</option>
+                  </select>
+                </div>
+                <!-- CHECKBOX -->
+                <div class="mb-3 ms-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="ContactoCheck">
+                  <label class="form-check-label form-label" for="ContactoCheck">Quiero recibir predicciones
+                    actualizadas sobre mi signo</label>
+                </div>
+              </form>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <a class="btn btn-primary" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal"
+                data-bs-target="#VentanaSuscripción2">SUSCRIBIRME</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ventana modal del mensaje de suspcricpión -->
+      <div class="modal fade" id="VentanaSuscripción2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" id="Modal001">
+          <img src="/assets/mensaje1.jpg" class="d-block w-100" alt="...">
+          <h2 class="dispaly-1">¡Gracias por suscribirte!</h2>
+          <p> Pronto te llegarán novedades y todas las predicciones sobre tu signo para el año 2022</i></p>
+          <script src="/js/bootstrap.bundle.js"> </script>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- ====================
+    ==       CAROUSEL        ==
+    ========================= -->
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/carrousel1.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/carrousel2.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/carrousel3.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <main>
+
+    <!-- =======================================
+    ==  CONTENEDOR PRINCIPAL DE TODO EL MAIN  ==
+    ============================================ -->
+
+    <div class="container mb-4">
+      <div class="row gx-5 ">
+
+        <!-- CONTENIDO PRINCIPAL (ENTRADAS) -->
+        <div id="columnas-index" class="col-sm-12 col-md-8 col-lg-9">
+          <div class="p-1">
+            <!-- ENTRADA 1 -->
+            <div class="card">
+              <img src="assets/images/2.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">El virus informático de tu signo del zodiaco</h5>
+                <p class="card-text">¿Cómo actuaría un virus informático que tuviera las características de un signo
+                  determinado?</p>
+                <a href="pages/entradas/virus.html" class="btn btn-outline-secondary">Seguir Leyendo</a>
+              </div>
+            </div>
+            <hr>
+            <!-- ENTRADA 2 -->
+            <div class="card">
+              <img src="assets/images/1.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Características de los signos del zodiaco</h5>
+                <p class="card-text">Cada uno de los signos del zodiaco tiene unas características particulares que los
+                  definen.</p>
+                <a href="pages/entradas/características.html" class="btn btn-outline-secondary">Seguir Leyendo</a>
+              </div>
+            </div>
+            <hr>
+            <!-- ENTRADA 3 -->
+            <div class="card">
+              <img src="assets/images/3.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">¿Qué signos del zodiaco son compatibles en el amor?</h5>
+                <p class="card-text">La personalidad, química, atracción y los gustos son factores muy importantes para
+                  que encuentres el amor.</p>
+                <a href="pages/entradas/compatibilidad.html" class="btn btn-outline-secondary">Seguir Leyendo</a>
+              </div>
+            </div>
+            <hr>
+            <!-- ENTRADA 4 -->
+            <div class="card">
+              <img src="/assets/images/4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">¿Qué perfil de programador te corresponde según tu signo?</h5>
+                <p class="card-text">Los tipos de programadores. Las computadoras han cambiado nuestras vidas de maneras
+                  que no podíamos imaginar. La astrología puede orientar tu profesión.</p>
+                <a href="pages/error404.html" class="btn btn-outline-secondary">Seguir Leyendo</a>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <!-- PAGINACION -->
+          <nav aria-label="Page navigation example" class="pagination">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" id="page-item" href="pages/error404.html" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" id="page-item" href="pages/error404.html">1</a></li>
+              <li class="page-item"><a class="page-link" id="page-item" href="pages/error404.html">2</a></li>
+              <li class="page-item"><a class="page-link" id="page-item" href="pages/error404.html">3</a></li>
+              <li class="page-item">
+                <a class="page-link" id="page-item" href="pages/error404.html" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <!-- ASIDE -->
+        <div id="columnas-index" class="col-sm-12 col-md-4 col-lg-3">
+          <div class="p-1 borde-redondo">
+
+            <!-- Search open -->
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+              <a class="btn btn-outline-secondary" href="/pages/error404.html" type="button" id="button-addon2"><i
+                  class="fas fa-search"></i></a>
+            </div>
+            <hr>
+            <!-- Acordion open -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Signos de Agua
+                  </button>
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body" id="accordion-body">
+                    <ul>
+                      <li><a class="tag-aside" href="pages/error404.html">Cáncer</a></li>
+                      <li><a class="tag-aside" href="pages/error404.html">Escorpio</a></li>
+                      <li><a class="tag-aside" href="pages/error404.html">Pisis</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Signos de Aire
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body" id="accordion-body">
+                    <ul>
+                      <li><a class="tag-aside" href="pages/error404.html">Acuario</a></li>
+                      <li><a class="tag-aside" href="pages/error404.html">Geminis</a></li>
+                      <li><a class="tag-aside" href="pages/error404.html">Libra</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Signos de Fuego
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body" id="accordion-body">
+                    <ul>
+                      <li><a class="tag-aside" href="pages/error404.html">Aries</a></li>
+                      <li><a class="tag-aside" href="pages/error404.html">Leo</a></li>
+                      <li><a class="tag-aside" href="pages/error404.html">Sagitario</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Signos de Tierra
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body" id="accordion-body">
+                      <ul>
+                        <li><a class="tag-aside" href="pages/error404.html">Capricornio</a></li>
+                        <li><a class="tag-aside" href="pages/error404.html">Tauro</a></li>
+                        <li><a class="tag-aside" href="pages/error404.html">Virgo</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Publicidad close -->
+            </div>
+            <hr>
+            <!-- Publicidad open -->
+            <div class="publicidad-container" id="ocultar-div">
+              <div id="CarouselHeader2" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#CarouselHeader2" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#CarouselHeader2" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#CarouselHeader2" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/assets/images/publicidad 1.jpg" class="d-block w-100" alt="publicidad 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/publicidad 2.jpg" class="d-block w-100" alt="publicidad 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/images/publicidad 3.jpg" class="d-block w-100" alt="publicidad 3">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+<div class="conteiner justify-content-between">
+
+ <div class="row justify-content-between">
+
+      <div id="izquierda" class=" text-center col-12 col-md-3 col-lg-3 d-flex me-5">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i> Twitter</a>
+      </div>
+
+      <div id="centro" class="text-center col-12 col-md-3 col-lg-3 d-flex me-5 ms-5 justify-content-between">
+        <p class="text-center">
+          &copy; Todos los derechos reservados para el Creador - 2021
+        </p>
+      </div>
+
+      <div id="derecha" class="col-12 col-md-3 col-lg-3 d-flex m-0 p-0 ms-4">
+
+        <a href="/index.html" class="flex-grow-1 text-align-center">
+          <img src="/assets/logo blanco 2.png" alt="logo Astral" width="100" height="100" class="text-align-center" >
+        </a>
+      </div>
+
+    </div>
+  
+</div>
+   
+
+
+  </footer>
+
+  <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>

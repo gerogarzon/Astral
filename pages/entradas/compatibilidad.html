@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRAL</title>
+
+    <!-- LINK DE FUENTE AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ESTILOS BOOTSTRAP -->
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+
+    <!-- ESTILO PROPIOS -->
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <!-- LOGO -->
+    <link rel="shortcut icon" href="/assets/logoHead.png">
+
+</head>
+
+<body class="background-astro">
+
+  <!-- ====================
+  ==       HEADER        ==
+  ========================= -->
+<div id="header">
+  <header>
+    <!-- navbar open -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
+      <div class="navbar-container container-fluid m-0 p-0">
+        <!-- LOGO -->
+        <a class="logo" href="/index.html">
+          <img src="/assets/astral 3.png" alt="logo Astral" width="35" height="35"> ASTRAL
+        </a>
+        <!-- MENU DEBLEGABLE -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:25px;"></i>
+          </span>
+        </button>
+        <!-- MENU -->
+        <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link" href="/pages/conocenos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link" href="/pages/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link" href="/pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#VentanaModalSusctiption">Suscripcion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link" aria-current="page" href="/pages/login.html"> Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Ventana Modal de la Suscripción -->
+    <div class="modal fade" id="VentanaModalSusctiption" tabindex="-1"       aria-labelledby="suscripcionModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal header -->
+            <div class="modal-header">
+              <h5 class="modal-title-S" id="suscripcionModalLabel">SUSCRIPCIÓN</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form>
+                  <!-- MAIL -->
+                  <div class="mb-3">
+                    <label for="ContactoEmail" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="ContactoEmail" aria-describedby="emailHelp" placeholder="seiya@pegaso">
+                    <div id="emailHelp" class="form-text"> <i>No compartiremos tu correo electrónico con nadie más.</i></div>
+                  </div>
+                  <!-- SIGNOS -->
+                  <div class="mb-3">
+                    <label for="ContactoSigno  " class="form-label">Signo</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option>Aries</option>
+                      <option>Tauro</option>
+                      <option>Géminis</option>
+                      <option>Cáncer</option>
+                      <option>Leo</option>
+                      <option>Virgo</option>
+                      <option>Libra</option>
+                      <option>Escorpio</option>
+                      <option>Sagitario</option>
+                      <option>Capricornio</option>
+                      <option>Acuario</option>
+                      <option>Piscis</option>
+                    </select>
+                  </div>
+                  <!-- CHECKBOX -->
+                  <div class="mb-3 ms-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="ContactoCheck">
+                    <label class="form-check-label form-label" for="ContactoCheck">Quiero recibir predicciones actualizadas sobre mi signo</label>
+                  </div>                 
+              </form>                     
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <a class="btn btn-primary" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#VentanaSuscripción2">SUSCRIBIRME</a>
+            </div>
+        </div>          
+      </div>
+    </div>
+    <!-- Ventana modal del mensaje de suspcricpión -->
+    <div class="modal fade" id="VentanaSuscripción2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" id="Modal001">
+          <img src="/assets/mensaje1.jpg" class="d-block w-100" alt="...">
+          <h2 class="dispaly-1">¡Gracias por suscribirte!</h2>
+          <p> Pronto te llegarán novedades y todas las predicciones sobre tu signo para el año 2022</i></p>
+          <script src="/js/bootstrap.bundle.js"> </script>
+      </div>
+    </div>
+  </header>
+</div>
+
+    <div style="height: 70px">
+    </div>
+  
+    <div class="tiutlo-entrada">
+      <h2> COMPATIBILIDAD DE LOS SIGNOS DEL ZODIACO </h2>
+      <p>La personalidad, química, atracción y los gustos son factores muy importantes para que encuentres el amor.</p>
+    </div>
+
+<div class="">
+    <div class="table-responsive">
+    <table class="tabla table-bordered border-primary">
+      <thead>
+        <tr>
+          <th> <img class="img-tamaño-primera" src="/assets/entradas/entradas/images/corazon.jpg" alt=""> </th>  
+          <th><img class="img-tamaño" src="/assets/entradas/images/aries-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/tauro-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/geminis-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/cancer-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/leo-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/virgo-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/libra-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/escorpio-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/sagitario-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/capricornio-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/acuario-compatibilidad.jpg" alt=""></th>
+          <th><img class="img-tamaño" src="/assets/entradas/images/piscis-compatibilidad.jpg" alt=""></th> 
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img  class="img-tamaño"src="/assets/entradas/images/aries-compatibilidad.jpg" alt=""></td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>9</td>
+          <td>8</td>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>8</td>
+          <td>6</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td><img  class="img-tamaño"src="/assets/entradas/images/tauro-compatibilidad.jpg" alt=""></td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>8</td>
+          <td>6</td>
+          <td>8</td>
+          <td>6</td>
+          <td>8</td>
+          <td>5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td><img  class="img-tamaño"src="/assets/entradas/images/geminis-compatibilidad.jpg" alt=""></td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+        </tr>
+        <tr>
+            <td><img  class="img-tamaño"src="/assets/entradas/images/cancer-compatibilidad.jpg" alt=""></td>
+            <td>5</td>
+            <td>7</td>
+            <td>6</td>
+            <td>6</td>
+            <td>8</td>
+            <td>6</td>
+            <td>7</td>
+            <td>9</td>
+            <td>7</td>
+            <td>9</td>
+            <td>6</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td><img  class="img-tamaño"src="/assets/entradas/images/leo-compatibilidad.jpg" alt=""></td>
+            <td>9</td>
+            <td>8</td>
+            <td>7</td>
+            <td>8</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>7</td>
+            <td>6</td>
+            <td>8</td>
+            <td>9</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td><img  class="img-tamaño"src="/assets/entradas/images/virgo-compatibilidad.jpg" alt=""></td>
+            <td>8</td>
+            <td>8</td>
+            <td>6</td>
+            <td>6</td>
+            <td>8</td>
+            <td>8</td>
+            <td>5</td>
+            <td>9</td>
+            <td>6</td>
+            <td>9</td>
+            <td>5</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td><img  class="img-tamaño"src="/assets/entradas/images/libra-compatibilidad.jpg" alt=""></td>
+            <td>6</td>
+            <td>6</td>
+            <td>8</td>
+            <td>7</td>
+            <td>9</td>
+            <td>5</td>
+            <td>6</td>
+            <td>5</td>
+            <td>5</td>
+            <td>8</td>
+            <td>9</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td><img  class="img-tamaño"src="/assets/entradas/images/escorpio-compatibilidad.jpg" alt=""></td>
+            <td>5</td>
+            <td>8</td>
+            <td>8</td>
+            <td>9</td>
+            <td>7</td>
+            <td>9</td>
+            <td>5</td>
+            <td>7</td>
+            <td>9</td>
+            <td>8</td>
+            <td>6</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td><img  class="img-tamaño"src="/assets/entradas/images/sagitario-compatibilidad.jpg" alt=""></td>
+            <td>7</td>
+            <td>6</td>
+            <td>8</td>
+            <td>7</td>
+            <td>6</td>
+            <td>6</td>
+            <td>5</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td><img  class="img-tamaño"src="/assets/entradas/images/capricornio-compatibilidad.jpg" alt=""></td>
+            <td>8</td>
+            <td>6</td>
+            <td>6</td>
+            <td>9</td>
+            <td>8</td>
+            <td>9</td>
+            <td>8</td>
+            <td>8</td>
+            <td>9</td>
+            <td>9</td>
+            <td>5</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td><img  class="img-tamaño"src="/assets/entradas/images/acuario-compatibilidad.jpg" alt=""></td>
+            <td>6</td>
+            <td>8</td>
+            <td>7</td>
+            <td>6</td>
+            <td>9</td>
+            <td>5</td>
+            <td>9</td>
+            <td>6</td>
+            <td>9</td>
+            <td>5</td>
+            <td>6</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td><img  class="img-tamaño"src="/assets/entradas/images/piscis-compatibilidad.jpg" alt=""></td>
+            <td>8</td>
+            <td>8</td>
+            <td>7</td>
+            <td>9</td>
+            <td>6</td>
+            <td>8</td>
+            <td>6</td>
+            <td>9</td>
+            <td>8</td>
+            <td>7</td>
+            <td>6</td>
+            <td>6</td>
+          </tr>
+      </tbody>
+    </table>
+    <div >
+        <p>
+        <h3>*Puntaje 5:</h3>
+        Aprobaron raspando. Es la mitad del 10,cada uno tiene que conseguir que "el otro"
+        le aporte la otra mitad para poder completarse. Ambos deberán generar la necesidad de seguir
+        en lo que estén haciendo juntos; si son pareja, es ideal mirarse a los ojos un buen rto por
+        día, para poder llevarse cada uno lo mejor del otro.
+        </p>
+    
+        <p>
+        <h3>*Puntaje 6:</h3>
+        Estables. Necesitan siempre hacer cosas extra para estarbien a nivel personal.
+        se terminan de complementar del todo en pareja si cada uno hace algo personal que ame, como
+        bailar, escribir poesía, deporte o un hobby. Para una relación laboral puede ser muy bueno
+        por que no se invaden, y para una amistad cada uno le da al otro algo muy diferente a lo que
+        el da al otro algo muy diferente a lo que el otro posee.
+        </p>
+    
+        <p>
+        <h3>*Puntaje 7:</h3>
+        Triunfo. Esto significa que viven de pequeñas victorias juntos, y eso da energía
+        para que la relación continúe .Tener un hijo si son pareja, tirar una pared para mejorar un
+        ambiente donde se convive, avanzar en el trabajo juntos, generando proyectos nuevos todo el
+        tiempo.
+        </p>
+        <p>
+        <h3>*Puntaje 8:</h3>
+        Equilibrio. Cada uno logra lo que juntos alcanzan, la seguridad para hacer
+        cualquier proyecto a largo plazo y obtienen buenas satisfacciones; una relación rica en
+        situaciones vividas.
+        </p>
+    
+        <p>
+        <h3>*Puntaje 9:</h3>
+        Sabiduría en el amor, un amor incondicional. Es facíl amarse y encontrarse desde
+        todos los puntos de vista. Comparten, charlan, dialogan, están de acuerdo sólo con mirarse.
+        Saben amarse si son amigos. Puntaje ideal para vivir siempre de a dos.
+        </p>
+      </div>
+</div>          
+  </div>
+  <br><br>
+  
+
+  <footer>
+		<div id="izquierda" class="text-center">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i> Facebook</a>
+			<a href="https://www.instagram.com"><i class="fab fa-instagram"></i>Instagram</a>
+			<a href="https://twitter.com"><i class="fab fa-twitter-square"></i>Twitter</a>
+
+		</div>
+		<div id="centro">
+			<p class="">
+				&copy; Todos los derechos reservados para el Creador - 2021
+			</p>
+		</div>
+
+		<div id="derecha">
+          <a href="/index.html">
+            <img src="/assets/entradas/logo blanco 2.png" alt="logo Astral" width="100" height="100">
+          </a>
+		</div>		
+	</footer>
+
+<script src="/js/bootstrap/bootstrap.js"></script> 
+</body>
+</html>
